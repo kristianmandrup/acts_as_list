@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "acts_as_list_ar.gemspec",
      "init.rb",
      "lib/acts_as_list_ar.rb",
      "lib/acts_as_list_ar/rails2.rb",
