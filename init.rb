@@ -1,1 +1,1 @@
-require 'ar_acts_as_list'
+require 'acts_as_list_ar'

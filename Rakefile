@@ -12,7 +12,7 @@ begin
     gem.homepage    = "http://github.com/rails/acts_as_list"
     gem.authors     = ["Kristian Mandrup", "Others"]
     gem.add_dependency "activerecord", ">= 1.15.4.7794"
-    gem.add_development_dependency "yard"
+    # gem.add_development_dependency "yard"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
@@ -43,8 +43,8 @@ task :test => :check_dependencies
 
 task :default => :test
 
-require 'yard'
-YARD::Rake::YardocTask.new do |t|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-  t.options += ['--title', "acts_as_list #{version} Documentation"]
-end
+# require 'yard'
+# YARD::Rake::YardocTask.new do |t|
+#   version = File.exist?('VERSION') ? File.read('VERSION') : ""
+#   t.options += ['--title', "acts_as_list #{version} Documentation"]
+# end

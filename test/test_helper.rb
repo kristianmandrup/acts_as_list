@@ -2,7 +2,7 @@ require 'rubygems'
 require 'test/unit'
 require 'active_record'
 $:.unshift "#{File.dirname(__FILE__)}/../lib/"
-require 'ar_acts_as_list_r3'
+require 'acts_as_list_ar'
 ActiveRecord::Base.establish_connection(:adapter => "sqlite3", :dbfile => ":memory:")
 
 def setup_db

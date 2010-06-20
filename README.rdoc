@@ -50,6 +50,9 @@ Then install it:
 If you discover any bugs or want to drop a line, feel free to create an issue on GitHub:
 http://github.com/rails/acts_as_list/issues 
 
+Alternatively send me a message at:
+
+
 === Note on Patches/Pull Requests
  
 * Fork the project.
