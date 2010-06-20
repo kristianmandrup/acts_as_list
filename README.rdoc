@@ -7,11 +7,13 @@ number of objects in a list. The class that has this specified needs to have a
 
 == Install
 
+  gem install acts_as_list_ar
+
 === Rails 3
 
 Specify it in your Rails Gemfile:
 
-    gem "acts-as-list"
+    gem "acts_as_list_ar"
 
 Then install it:
 
@@ -19,13 +21,13 @@ Then install it:
 
 === Rails 2
 
-Specify it in your Rails config:
+Specify the gem in your config/environment.rb file:
 
-	config.gem "acts_as_list", "~>0.1"
+    config.gem "acts_as_list_ar"
 
 Then install it:
 
-  rake gems:install
+    $ rake gems:install
 
 
 == Example
@@ -57,8 +59,3 @@ http://github.com/rails/acts_as_list/issues
 * Commit, do not mess with rakefile, version, or history.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
-
-
-== Credits
-
-Copyright (c) 2007 David Heinemeier Hansson, released under the MIT license

@@ -1,0 +1,8 @@
+This gem has been assembled using various different commits from different forks.
+The goal has been to collect maximum functionality, while maintaining support for both Rails 2 and 3 and Ruby 1.8.x and 1.9.x.
+This gem has not undergone testing yet. Please feel free to test it out, improve it, fix it etc.           
+
+Note: There is also a Mongo Mapper version of acts_as_list out there. 
+This is one reason why this gem is postfixed with '_ar' and the module name is ActsAsListAR. 
+I hope there will be ports to other storage systems in the future!
+ 

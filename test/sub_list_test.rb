@@ -1,6 +1,12 @@
+# Load the plugin's test_helper (Rails 2.x needs the path)
+begin
+  require File.dirname(__FILE__) + '/test_helper.rb'
+rescue LoadError
+  require 'test_helper'
+end
 require 'test/helper'
 
-class ListSubTest < Test::Unit::TestCase
+class ListSubTest < ActiveSupport::TestCase
 
   def setup
     setup_db

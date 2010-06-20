@@ -4,12 +4,13 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name        = "acts_as_list"
-    gem.summary     = %Q{Gem version of acts_as_list Rails plugin}
-    gem.description = %Q{Gem version of acts_as_list Rails plugin}
-    gem.email       = "bmichel@menfin.info"
+    gem.name        = "acts_as_list_ar"
+    gem.summary     = %Q{Gem version of acts_as_list for Active Record with Rails 2 and 3 support}
+    gem.description = %Q{Make your model acts as a list. This acts_as extension provides the capabilities for sorting and reordering a number of objects in a list.
+      The class that has this specified needs to have a +position+ column defined as an integer on the mapped database table.}
+    gem.email       = "kmandrup@gmail.com"
     gem.homepage    = "http://github.com/rails/acts_as_list"
-    gem.authors     = ["Bruno Michel", "Ryan Bates", "Rails Core"]
+    gem.authors     = ["Kristian Mandrup", "Others"]
     gem.add_dependency "activerecord", ">= 1.15.4.7794"
     gem.add_development_dependency "yard"
   end

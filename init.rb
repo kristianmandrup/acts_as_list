@@ -1,0 +1,1 @@
+require 'ar_acts_as_list'
