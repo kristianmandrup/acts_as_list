@@ -1,4 +1,5 @@
 # Load the plugin's test_helper (Rails 2.x needs the path)
+require 'test/unit'
 begin
   require File.dirname(__FILE__) + '/test_helper.rb'
 rescue LoadError
@@ -52,12 +53,13 @@ class ListTest < ActiveSupport::TestCase
 
   def test_injection
     item = ListMixin.new(:parent_id => 1)
-    assert_equal ["parent_id = ?", 1], item.scope_condition    
+    assert_equal ["parent_id = 1"], item.scope_condition    
     assert_equal "pos", item.position_column
   end
 
-  def test_insert
+  def test_insert    
     new = ListMixin.create(:parent_id => 20)
+    # insert as last    
     assert_equal 1, new.pos
     assert new.first?
     assert new.last?
@@ -78,7 +80,8 @@ class ListTest < ActiveSupport::TestCase
     assert new.last?
   end
 
-  def test_insert_at
+  def test_insert_at 
+    # insert as last    
     new = ListMixin.create(:parent_id => 20)
     assert_equal 1, new.pos
 

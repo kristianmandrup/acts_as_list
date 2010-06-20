@@ -58,7 +58,7 @@ class ListWithStringIdsTest < ActiveSupport::TestCase
 
   def test_injection
     item = MixinWithStrings.new(:parent_id => 1)
-    assert_equal ["parent_id = ?", 1], item.scope_condition
+    assert_equal ["parent_id = 1"], item.scope_condition
     assert_equal "pos", item.position_column
   end
 

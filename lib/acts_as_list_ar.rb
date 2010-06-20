@@ -17,7 +17,7 @@ module ActsAsListAR
           if #{configuration[:scope].to_s}.nil?
             "#{configuration[:scope].to_s} IS NULL"
           else
-            ["#{configuration[:scope].to_s} = ?", #{configuration[:scope].to_s}]                
+            "#{configuration[:scope].to_s} = #{configuration[:scope].to_s}"
           end
         end
       )

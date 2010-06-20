@@ -5,4 +5,12 @@ This gem has not undergone testing yet. Please feel free to test it out, improve
 Note: There is also a Mongo Mapper version of acts_as_list out there. 
 This is one reason why this gem is postfixed with '_ar' and the module name is ActsAsListAR. 
 I hope there will be ports to other storage systems in the future!
- 
+                                                          
+---
+Tests:
+
+When I run the acts_as_list_test I currently get a few errors for 'insert' and 'insert_at'. The position of a created item is 5, 6 and so on when it should have been 
+1, 2, ...
+
+I'm not sure if this is intended or not, i.e if the tests are to be changed or the code. Feel free to respond to this! 
+I will try to contact some of the fork members about this issue.
