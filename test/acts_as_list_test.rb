@@ -4,7 +4,6 @@ begin
 rescue LoadError
   require 'test_helper'
 end
-require 'test/helper'
 
 class ListTest < ActiveSupport::TestCase
   def setup

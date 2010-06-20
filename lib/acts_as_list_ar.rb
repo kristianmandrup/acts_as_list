@@ -47,7 +47,6 @@ module ActsAsListAR
 
       before_destroy :eliminate_current_position
       before_create  :add_to_list_bottom_when_necessary 
-      #{scope_name} "by_#{configuration[:column].to_s}", :order => "#{configuration[:column].to_s} asc"                
     EOV
     
     include InstanceMethods

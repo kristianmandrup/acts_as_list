@@ -36,23 +36,22 @@ def teardown_db
 end
 
 module DefaultBehavior
-  before_create :add_to_list_bottom_when_necessary  
-
-  def self.table_name 
-    "mixins" 
-  end
-
   attr_accessor :before_save_triggered
-  before_save :log_before_save  
-  before_create :add_to_list_bottom_when_necessary
 
   def log_before_save
     self.before_save_triggered = true
   end
 end
 
-class Mixin < ActiveRecord::Base  
-  include DefaultBehavior
+class Mixin < ActiveRecord::Base                  
+  before_save :log_before_save  
+  before_create :add_to_list_bottom_when_necessary
+
+  def self.table_name 
+    "mixins" 
+  end
+
+  include DefaultBehavior  
 end
 
 class MixinWithStrings < ActiveRecord::Base
